@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./mainThread.js"></script>
+</head>
+<body>
+    <input id="first" type="text" onchange="firstOnChange()">
+    <input id="second" type="text" onchange="secondOnChange()">
+    <!-- <script>
+        if (window.Worker) {
+            var myWorker = new Worker('worker.js');
+            function firstOnChange() {
+                console.dir('myWorker', [document.getElementById('first').value, document.getElementById('second').value]);
+                myWorker.postMessage([document.getElementById('first').value, document.getElementById('second').value])
+            }
+            function secondOnChange() {
+                myWorker.postMessage([document.getElementById('first').value, document.getElementById('second').value])
+            }   
+        }
+    </script> -->
+</body>
+</html>
